@@ -1,0 +1,9 @@
+{% extends 'carreras/base.html' %}
+{% block content %}
+        <h1>Las carreas son </h1>
+        {% for carrera in carreras%}
+            <li>{{ carrera }}</li>
+        {% endfor %}
+        
+        
+{% endblock %}

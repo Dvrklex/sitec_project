@@ -37,7 +37,7 @@ class Materia(models.Model):
         verbose_name="Duracion de la materia",
         default=DuracionMateria.SEMESTRAL
         )
-    carrera = models.ForeignKey(Carrera,verbose_name='Carrera', on_delete=models.CASCADE)
+    carrera = models.ForeignKey(Carrera,verbose_name='Carrera', on_delete=models.CASCADE, related_name='materias')
     created_at = models.DateTimeField(verbose_name='Creado el',auto_now_add=True)    
     updated_at = models.DateTimeField(verbose_name='Actualizado el',auto_now=True)
 
